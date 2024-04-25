@@ -32,7 +32,7 @@ BRCA_Methylation <- read.csv("BRCA_Methylation.csv", header = TRUE, row.names = 
 
 get.full.ref.gene.df <- function() 
 {
-  hg19.ref.gene <- rtracklayer::import(HG19.REF.GENE.PATH)
+  hg19.ref.gene <- rtracklayer::import(HG19.REF.GENE.PATH, format = "gtf", encoding = "UTF-8")
   hg19.ref.gene.df <- as.data.frame(hg19.ref.gene)
   return(hg19.ref.gene.df)
 }
