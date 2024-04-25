@@ -30,7 +30,7 @@ expression=readRDS("expression.rda")
 methylation=readRDS("methylation.rda")
 expression_features = rownames(expression)
 methylation_features = rownames(methylation)
-BRCA_Methylation <- read.csv("BRCA_Methylation.csv", header = TRUE, row.names = 1)
+BRCA_Methylation = readRDS("BRCA_Methylation.rda")
 ###################################
 #5] Functions
 
