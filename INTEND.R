@@ -13,10 +13,6 @@ library(dplyr)
 library(parallel)
 library(pracma)
 library(glmnet)
-###################################
-#3] Set working directory
-
-setwd(normalizePath(dirname(rstudioapi::getSourceEditorContext()$path)))
 ##################################
 #4] Load data
 
